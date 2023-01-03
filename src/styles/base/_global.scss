@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  //@include border-box;
+  //box-sizing: inherit;
+}
+
+html {
+  // define what 1rem is
+  font-size: 100%; // 10px / 16px = .625 * 100 = 62.5%
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  //color: $textColor;
+  //background: url("./diana.jpg");
+  background-color: green;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  //color: $mainOrange;
+}
+
+::selection {
+  background-color: red;
+  color: white;
+}
+
+header {
+  background-image: url("./images/diana.jpg");
+  background-repeat: no-repeat;
+  height: 200px;
+}
